@@ -12,7 +12,7 @@ def count_jobs(data:list, job:str) -> int:
     for i in data:
         if i['job']==job:
             k+=1
-            return k
+    return k
 data=[
   {
     'name': 'John', 
@@ -21,6 +21,8 @@ data=[
   {
     'name': 'Mary', 
     'job': 'Developer'
-  }]
-    
-print(count_jobs(data,"Developer"))
+  }
+  ]
+job='Developer'
+  
+print(count_jobs(data,job))
